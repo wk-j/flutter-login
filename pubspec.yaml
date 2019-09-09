@@ -40,6 +40,8 @@ flutter:
 
   assets:
     - logo.png
+    - firebase.jpg
+
   fonts:
     - family: Montserrat
       fonts:

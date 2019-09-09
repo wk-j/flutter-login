@@ -75,22 +75,15 @@ class MyHomePageState extends State<MyHomePage> {
             children: <Widget>[
               SizedBox(
                 height: 155.0,
-                child: Image.asset(
-                  "assets/logo.png",
-                  fit: BoxFit.contain,
-                ),
+                child: Image.asset("assets/firebase.jpg", fit: BoxFit.contain),
               ),
               SizedBox(height: 45.0),
               emailField,
               SizedBox(height: 25.0),
               passwordField,
-              SizedBox(
-                height: 35.0,
-              ),
+              SizedBox(height: 35.0),
               loginButton,
-              SizedBox(
-                height: 15.0,
-              )
+              SizedBox(height: 15.0)
             ],
           ),
         ),
