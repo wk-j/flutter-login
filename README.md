@@ -1,4 +1,6 @@
-## Login [![Actions](https://github.com/wk-j/flutter-login/workflows/flutter/badge.svg)](https://github.com/wk-j/flutter-login/actions)
+## Login
+
+[![Actions](https://github.com/wk-j/flutter-login/workflows/flutter/badge.svg)](https://github.com/wk-j/flutter-login/actions)
 
 Build a login UI with Flutter
 
