@@ -40,6 +40,7 @@ flutter:
 
   assets:
     - logo.png
+    - logo.gif
     - firebase.jpg
 
   fonts:

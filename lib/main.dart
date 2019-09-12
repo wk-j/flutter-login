@@ -63,43 +63,39 @@ class MyHomePageState extends State<MyHomePage> {
       ),
     );
 
+    var logo = Container(
+      width: 200,
+      height: 200,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        image: DecorationImage(
+          image: AssetImage("assets/logo.gif"),
+          fit: BoxFit.cover,
+        ),
+      ),
+    );
+
     return Scaffold(
-      body: ListView(
-        children: <Widget>[
-          Center(
-            child: Container(
-              color: Colors.white,
-              child: Padding(
-                padding: const EdgeInsets.all(36.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Container(
-                      width: 200,
-                      height: 200,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        image: DecorationImage(
-                          image: new NetworkImage(
-                              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiE9ABeH-ePhpVwwTH8QWGS8YmR3zzWbkz3uT8Cb6Odlh3vQjD"),
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 45.0),
-                    emailField,
-                    SizedBox(height: 25.0),
-                    passwordField,
-                    SizedBox(height: 35.0),
-                    loginButton,
-                    SizedBox(height: 15.0)
-                  ],
-                ),
-              ),
+      body: Center(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: EdgeInsets.all(30),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                logo,
+                SizedBox(height: 45.0),
+                emailField,
+                SizedBox(height: 25.0),
+                passwordField,
+                SizedBox(height: 35.0),
+                loginButton,
+                SizedBox(height: 15.0)
+              ],
             ),
           ),
-        ],
+        ),
       ),
     );
   }
